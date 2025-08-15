@@ -1,464 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>officePro Education</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Header -->
-    <header>
-      <img
-        src="resource/logo1.png"
-        alt="officePro Education Logo"
-        class="logo"
-        style="width: 100px"
-      />
-      <h1>officePro Education</h1>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>officePro Education — Modern</title>
 
-    <!-- Navigation -->
-    <nav class="desktop-nav">
-      <a href="#home">Home</a>
-      <a href="#offer">Our Contents</a>
-      <a href="#packs">Video Packs</a>
-      <a href="#courses">Courses</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
 
-    <!-- Mobile Navigation Toggle -->
-    <div class="mobile-nav-toggle">
-      <button id="mobileMenuBtn" class="mobile-menu-btn">
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Decorative Background -->
+  <div class="bg">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="grid"></div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-inner container">
+      <a href="#home" class="brand">
+        <img src="resource/logo1.png" alt="officePro Education" class="brand-logo" />
+        <span class="brand-text">officePro<span> Education</span></span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#offer" class="nav-link">Our Contents</a>
+        <a href="#packs" class="nav-link">Video Packs</a>
+        <a href="#courses" class="nav-link">Courses</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
       </button>
     </div>
 
-    <!-- Mobile Offcanvas Navigation -->
-    <div class="mobile-offcanvas" id="mobileOffcanvas">
-      <div class="offcanvas-header">
-        <h3>Menu</h3>
-        <button id="closeMenuBtn" class="close-menu-btn">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="offcanvas-body">
-        <a href="#home" class="mobile-nav-link">
-          <i class="fas fa-home"></i>
-          <span>Home</span>
-        </a>
-        <a href="#offer" class="mobile-nav-link">
-          <i class="fas fa-book"></i>
-          <span>Our Contents</span>
-        </a>
-        <a href="#packs" class="mobile-nav-link">
-          <i class="fas fa-video"></i>
-          <span>Video Packs</span>
-        </a>
-        <a href="#courses" class="mobile-nav-link">
-          <i class="fas fa-graduation-cap"></i>
-          <span>Courses</span>
-        </a>
-        <a href="#contact" class="mobile-nav-link">
-          <i class="fas fa-phone"></i>
-          <span>Contact</span>
-        </a>
-      </div>
-    </div>
+    <!-- Mobile Drawer -->
+    <nav class="drawer" id="drawer" aria-label="Mobile">
+      <a href="#home" class="drawer-link"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="#offer" class="drawer-link"><i class="fa-solid fa-book"></i> Our Contents</a>
+      <a href="#packs" class="drawer-link"><i class="fa-solid fa-video"></i> Video Packs</a>
+      <a href="#courses" class="drawer-link"><i class="fa-solid fa-graduation-cap"></i> Courses</a>
+      <a href="#contact" class="drawer-link"><i class="fa-solid fa-phone"></i> Contact</a>
+    </nav>
+    <div class="drawer-overlay" id="drawerOverlay" aria-hidden="true"></div>
+  </header>
 
-    <!-- Overlay for mobile menu -->
-    <div class="mobile-overlay" id="mobileOverlay"></div>
-
-    <!-- Home Section -->
-    <section id="home" class="section">
-      <h2>Welcome!</h2>
-      <p>
+  <!-- Hero -->
+  <section id="home" class="section hero container">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        Learn Practical <span>ICT & MS Office</span> Skills
+      </h1>
+      <p class="hero-subtitle">
+        MS Office, AI Tools, Graphic Design, Internet & Email, Google Workspace, and more —
+        built for beginners to get job-ready skills fast.
+      </p>
+      <p class="hero-subtitle">
         අපි ඔබට MSOffice, Excel, Word, PowerPoint, AI Tools, Graphic Design,
         Online Tools & Platforms, Other Working Technologies & Software පිළිබඳ
         විශේෂඥතාවක් සහ මනා දැනුමක් ලබා දෙන්නෙමු.
       </p>
-      <br />
-      <p>
-        We teach practical <strong>MS Office</strong> and
-        <strong>ICT skills</strong>
-        to our students. This site shows what courses are available, how long
-        they take, and what students will learn.
-      </p>
-      <br />
-      <p>
-        Perfect for beginners — no prior experience needed and no any age limit!
-      </p>
-    </section>
-
-    <!-- Subjects Packages (Cards) -->
-    <section id="offer" class="section">
-      <h2>📚 Our Contents</h2>
-      <div class="cards">
-        <!-- Card 1 -->
-        <div class="card">
-          <h3><i class="fa-brands fa-microsoft"></i> MS Word Essentials</h3>
-          <ul>
-            <li>Create school assignments</li>
-            <li>Format text & headings</li>
-            <li>Insert tables and images</li>
-            <li>Save & print correctly</li>
-            <li>etc...</li>
-          </ul>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="card">
-          <h3><i class="fa-brands fa-microsoft"></i>MS Excel</h3>
-          <ul>
-            <li>Enter and organize data</li>
-            <li>Use SUM, AVERAGE formulas</li>
-            <li>Create bar & pie charts</li>
-            <li>Build a budget tracker</li>
-            <li>etc...</li>
-          </ul>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="card">
-          <h3><i class="fa-brands fa-microsoft"></i>MS PowerPoint</h3>
-          <ul>
-            <li>Design engaging slides</li>
-            <li>Add animations & transitions</li>
-            <li>Present with confidence</li>
-            <li>Use templates & themes</li>
-            <li>etc...</li>
-          </ul>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="card">
-          <h3><i class="fas fa-laptop"></i>Computer Basics & Fundamentals</h3>
-          <ul>
-            <li>Computer Introduction</li>
-            <li>Computer Fundamentals</li>
-            <li>Computer Components</li>
-            <li>Usefull things of Computer</li>
-            <li>Cyberbullying, privacy, ethics</li>
-          </ul>
-        </div>
-
-        <!-- Card 5 -->
-        <div class="card">
-          <h3><i class="fas fa-globe"></i>Internet & Email</h3>
-          <ul>
-            <li>Introduction to Internet & Email</li>
-            <li>Usage of Internet</li>
-            <li>Creating Email</li>
-            <li>Manage Emails</li>
-          </ul>
-        </div>
-
-        <!-- Card 6 -->
-        <div class="card">
-          <h3><i class="fas fa-robot"></i>AI Basics & Tools</h3>
-          <ul>
-            <li>AI Introduction</li>
-            <li>AI Chatbots</li>
-            <li>AI Tools</li>
-            <li>Usefull of AI</li>
-          </ul>
-        </div>
-
-        <!-- Card 7 -->
-        <div class="card hidden-card">
-          <h3><i class="fa-brands fa-google"></i>Google Drive & Forms</h3>
-          <ul>
-            <li>Introduction Drive & Forms</li>
-            <li>Manage Drive</li>
-            <li>Create Forms</li>
-            <li>Data Collection of Forms</li>
-          </ul>
-        </div>
-
-        <!-- Card 8 -->
-        <div class="card hidden-card">
-          <h3><i class="fas fa-paintbrush"></i>Canva</h3>
-          <ul>
-            <li>Introduction of Canva</li>
-            <li>Post, Advertice, Logo & Presentation Making (etc..)</li>
-            <li>Use Templates</li>
-            <li>Resume Making</li>
-          </ul>
-        </div>
-
-        <!-- Card 9 -->
-        <div class="card hidden-card">
-          <h3><i class="fas fa-video"></i>CapCut</h3>
-          <ul>
-            <li>Introduction to CapCut</li>
-            <li>Video Editing Basics</li>
-            <li>Transitions & Effects</li>
-            <li>Text & Music Integration</li>
-            <li>Export & Share Videos</li>
-          </ul>
-        </div>
+      <div class="hero-cta">
+        <a href="#offer" class="btn btn-primary">
+          Explore Contents <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="#contact" class="btn btn-ghost">
+          Contact Us <i class="fa-solid fa-message"></i>
+        </a>
       </div>
+    </div>
+    <div class="hero-art">
+      <div class="hero-card floating a"><i class="fa-brands fa-microsoft"></i><span>MS Office</span></div>
+      <div class="hero-card floating b"><i class="fa-solid fa-robot"></i><span>AI Tools</span></div>
+      <div class="hero-card floating c"><i class="fa-solid fa-globe"></i><span>Online Skills</span></div>
+      <div class="hero-ring"></div>
+    </div>
+    <div class="divider wave"></div>
+  </section>
 
-      <!-- Expand Button -->
-      <div class="expand-container">
-        <button id="expandBtn" class="expand-btn">
-          <i class="fas fa-chevron-down"></i>
-          <span>Show All Contents</span>
-        </button>
-      </div>
-    </section>
+  <!-- Our Contents -->
+  <section id="offer" class="section container">
+    <header class="section-head">
+      <h2 class="section-title">📚 Our Contents</h2>
+      <p class="section-desc">Everything you need to get confident with computers and modern tools.</p>
+    </header>
 
-    <!-- video Packages (Cards) -->
-    <section id="packs" class="section">
-      <h2>💽 Course Video Packs</h2>
-      <div class="cards">
-        <!-- Card 1 -->
-        <div class="card">
-          <h3><i class="fas fa-laptop"></i> IT Course - Pack 01</h3>
-          <ul>
-            <li>MS Office Word</li>
-            <li>MS Office Excel</li>
-            <li>MS Office PowerPoint</li>
-          </ul>
-          <p>
-            <strong>Deliver:</strong> &nbsp;<i
-              class="fa-brands fa-google-drive"
-            ></i>
-            Drive Link
-          </p>
-          <!-- <p><strong>🎁 Bonus:</strong> Certificate</p> -->
-          <div class="pricing">
-            <p class="old-price">
-              <span class="strikethrough">Rs. 1,900</span>
-            </p>
-            <p class="new-price">
-              <span class="highlight">Rs. 1,500</span>
-            </p>
-          </div>
+    <div class="cards" data-tilt-group>
+      <article class="card reveal">
+        <h3><i class="fa-brands fa-microsoft"></i> MS Word Essentials</h3>
+        <ul>
+          <li>Create school assignments</li>
+          <li>Format text & headings</li>
+          <li>Insert tables and images</li>
+          <li>Save & print correctly</li>
+          <li>etc...</li>
+        </ul>
+      </article>
+
+      <article class="card reveal">
+        <h3><i class="fa-brands fa-microsoft"></i> MS Excel</h3>
+        <ul>
+          <li>Enter and organize data</li>
+          <li>Use SUM, AVERAGE</li>
+          <li>Create bar & pie charts</li>
+          <li>Build a budget tracker</li>
+          <li>etc...</li>
+        </ul>
+      </article>
+
+      <article class="card reveal">
+        <h3><i class="fa-brands fa-microsoft"></i> MS PowerPoint</h3>
+        <ul>
+          <li>Design engaging slides</li>
+          <li>Add animations & transitions</li>
+          <li>Present with confidence</li>
+          <li>Use templates & themes</li>
+          <li>etc...</li>
+        </ul>
+      </article>
+
+      <article class="card reveal">
+        <h3><i class="fa-solid fa-laptop"></i> Computer Basics & Fundamentals</h3>
+        <ul>
+          <li>Computer Introduction</li>
+          <li>Computer Components</li>
+          <li>Useful tasks & tips</li>
+          <li>Cyberbullying, privacy, ethics</li>
+        </ul>
+      </article>
+
+      <article class="card reveal">
+        <h3><i class="fa-solid fa-globe"></i> Internet & Email</h3>
+        <ul>
+          <li>Introduction to Internet & Email</li>
+          <li>Usage & safety online</li>
+          <li>Creating & managing email</li>
+        </ul>
+      </article>
+
+      <article class="card reveal">
+        <h3><i class="fa-solid fa-robot"></i> AI Basics & Tools</h3>
+        <ul>
+          <li>AI introduction & chatbots</li>
+          <li>Real-world tools & prompts</li>
+          <li>Everyday productivity</li>
+        </ul>
+      </article>
+
+      <article class="card reveal hidden-card">
+        <h3><i class="fa-brands fa-google"></i> Google Drive & Forms</h3>
+        <ul>
+          <li>Organize files in Drive</li>
+          <li>Create & share Forms</li>
+          <li>Collect and view responses</li>
+        </ul>
+      </article>
+
+      <article class="card reveal hidden-card">
+        <h3><i class="fa-solid fa-paintbrush"></i> Canva</h3>
+        <ul>
+          <li>Design posts & presentations</li>
+          <li>Use templates smartly</li>
+          <li>Resume making</li>
+        </ul>
+      </article>
+
+      <article class="card reveal hidden-card">
+        <h3><i class="fa-solid fa-video"></i> CapCut</h3>
+        <ul>
+          <li>Video editing basics</li>
+          <li>Transitions & effects</li>
+          <li>Text & music integration</li>
+        </ul>
+      </article>
+    </div>
+
+    <br>
+
+    <div class="center">
+      <button id="expandBtn" class="btn btn-primary btn-pill"><i class="fa-solid fa-chevron-down"></i><span> Show All Contents</span></button>
+    </div>
+    <div class="divider skew"></div>
+  </section>
+
+  <!-- Video Packs -->
+  <section id="packs" class="section container alt">
+    <header class="section-head">
+      <h2 class="section-title">💽 Course Video Packs</h2>
+      <p class="section-desc">Watch on your schedule. Delivered via Google Drive.</p>
+    </header>
+
+    <div class="cards pricing-cards" data-tilt-group>
+      <article class="card reveal price">
+        <h3><i class="fa-solid fa-laptop"></i> IT Course - Pack 01</h3>
+        <ul>
+          <li>MS Office Word</li>
+          <li>MS Office Excel</li>
+          <li>MS Office PowerPoint</li>
+        </ul>
+        <p><strong>Deliver:</strong> <i class="fa-brands fa-google-drive"></i> Drive Link</p>
+        <div class="price-bar">
+          <span class="old">Rs. 1,900</span>
+          <span class="new">Rs. 1,500</span>
         </div>
+      </article>
 
-        <!-- Card 2 -->
-        <div class="card">
-          <h3><i class="fas fa-laptop"></i> IT Course - Pack 02</h3>
-          <ul>
-            <li>Internet & Email</li>
-            <li>MS Office Word</li>
-            <li>MS Office Excel</li>
-            <li>MS Office PowerPoint</li>
-          </ul>
-          <p>
-            <strong>Deliver:</strong> &nbsp;<i
-              class="fa-brands fa-google-drive"
-            ></i>
-            Drive Link
-          </p>
-          <!-- <p><strong>🎁 Bonus:</strong> Certificate</p> -->
-          <div class="pricing">
-            <p class="old-price">
-              <span class="strikethrough">Rs. 2,500</span>
-            </p>
-            <p class="new-price">
-              <span class="highlight">Rs. 2,000</span>
-            </p>
-          </div>
+      <article class="card reveal price">
+        <h3><i class="fa-solid fa-laptop"></i> IT Course - Pack 02</h3>
+        <ul>
+          <li>Internet & Email</li>
+          <li>MS Office Word</li>
+          <li>MS Office Excel</li>
+          <li>MS Office PowerPoint</li>
+        </ul>
+        <p><strong>Deliver:</strong> <i class="fa-brands fa-google-drive"></i> Drive Link</p>
+        <div class="price-bar">
+          <span class="old">Rs. 2,500</span>
+          <span class="new">Rs. 2,000</span>
         </div>
+      </article>
 
-        <!-- Card 3 -->
-        <div class="card">
-          <h3><i class="fas fa-laptop"></i> IT Course - Pack 03</h3>
-          <ul>
-            <li>Computer Basics & Fundamentals</li>
-            <li>Internet & Email</li>
-            <li>MS Office Word</li>
-            <li>MS Office Excel</li>
-            <li>MS Office PowerPoint</li>
-          </ul>
-          <p>
-            <strong>Deliver:</strong> &nbsp;<i
-              class="fa-brands fa-google-drive"
-            ></i>
-            Drive Link
-          </p>
-          <!-- <p><strong>🎁 Bonus:</strong> Certificate</p> -->
-          <div class="pricing">
-            <p class="old-price">
-              <span class="strikethrough">Rs. 2,500</span>
-            </p>
-            <p class="new-price">
-              <span class="highlight">Rs. 2,000</span>
-            </p>
-          </div>
+      <article class="card reveal price">
+        <h3><i class="fa-solid fa-laptop"></i> IT Course - Pack 03</h3>
+        <ul>
+          <li>Computer Basics & Fundamentals</li>
+          <li>Internet & Email</li>
+          <li>MS Office Word</li>
+          <li>MS Office Excel</li>
+          <li>MS Office PowerPoint</li>
+        </ul>
+        <p><strong>Deliver:</strong> <i class="fa-brands fa-google-drive"></i> Drive Link</p>
+        <div class="price-bar">
+          <span class="old">Rs. 2,500</span>
+          <span class="new">Rs. 2,000</span>
         </div>
+      </article>
 
-        <!-- Card 4 -->
-        <div class="card">
-          <h3><i class="fas fa-laptop"></i> IT Course - Pack 04</h3>
-          <ul>
-            <li>Computer Basics & Fundamentals</li>
-            <li>Internet & Email</li>
-            <li>MS Office Word</li>
-            <li>MS Office Excel</li>
-            <li>MS Office PowerPoint</li>
-            <li>AI Tools & Chatbots</li>
-          </ul>
-          <p>
-            <strong>Deliver:</strong> &nbsp;<i
-              class="fa-brands fa-google-drive"
-            ></i>
-            Drive Link
-          </p>
-          <!-- <p><strong>🎁 Bonus:</strong> Certificate</p> -->
-          <div class="pricing">
-            <p class="old-price">
-              <span class="strikethrough">Rs. 3,000</span>
-            </p>
-            <p class="new-price">
-              <span class="highlight">Rs. 2,500</span>
-            </p>
-          </div>
+      <article class="card reveal price">
+        <h3><i class="fa-solid fa-laptop"></i> IT Course - Pack 04</h3>
+        <ul>
+          <li>Computer Basics & Fundamentals</li>
+          <li>Internet & Email</li>
+          <li>MS Office Word</li>
+          <li>MS Office Excel</li>
+          <li>MS Office PowerPoint</li>
+          <li>AI Tools & Chatbots</li>
+        </ul>
+        <p><strong>Deliver:</strong> <i class="fa-brands fa-google-drive"></i> Drive Link</p>
+        <div class="price-bar">
+          <span class="old">Rs. 3,000</span>
+          <span class="new">Rs. 2,500</span>
         </div>
+      </article>
 
-        <!-- Card 5 -->
-        <div class="card">
-          <h3><i class="fas fa-laptop"></i>Canva Full Course</h3>
-          <ul>
-            <li>Full Tutorials of Canva (A-Z)</li>
-            <!-- <li>No - Canva Pro</li> -->
-          </ul>
-          <p>
-            <strong>Deliver:</strong> &nbsp;<i
-              class="fa-brands fa-google-drive"
-            ></i>
-            Drive Link
-          </p>
-          <!-- <p><strong>🎁 Bonus:</strong> Certificate</p> -->
-          <div class="pricing">
-            <p class="old-price">
-              <span class="strikethrough">Rs. 2,500</span>
-            </p>
-            <p class="new-price">
-              <span class="highlight">Rs. 1,500</span>
-            </p>
-          </div>
+      <article class="card reveal price">
+        <h3><i class="fa-solid fa-laptop"></i> Canva Full Course</h3>
+        <ul>
+          <li>Full Tutorials of Canva (A-Z)</li>
+        </ul>
+        <p><strong>Deliver:</strong> <i class="fa-brands fa-google-drive"></i> Drive Link</p>
+        <div class="price-bar">
+          <span class="old">Rs. 2,500</span>
+          <span class="new">Rs. 1,500</span>
         </div>
-      </div>
-    </section>
+      </article>
+    </div>
+    <div class="divider wave"></div>
+  </section>
 
-    <!-- Course Packages (Cards) -->
-    <section id="courses" class="section">
-      <h2>📦 Our Certificate Courses</h2>
-      <div class="cards">
-        <!-- Card 1 -->
-        <div class="card">
-          <h3><i class="fas fa-laptop"></i> IT Course - 01</h3>
-          <ul>
-            <li>Internet & Email</li>
-            <li>MS Office Word</li>
-            <li>MS Office Excel</li>
-            <li>MS Office PowerPoint</li>
-          </ul>
-          <p><strong>Duration:</strong> 06 Weeks</p>
-          <p><strong>Class:</strong> Weekends</p>
-          <p><strong>Class Mode:</strong> Online</p>
-          <!-- <p><strong>🎁 Bonus:</strong> Certificate</p> -->
-          <div class="pricing">
-            <p class="old-price">
-              <span class="strikethrough">Rs. 5,000</span>
-            </p>
-            <p class="new-price">
-              <span class="highlight">Rs. 4,000</span>
-            </p>
-          </div>
+  <!-- Certificate Courses -->
+  <section id="courses" class="section container">
+    <header class="section-head">
+      <h2 class="section-title">📦 Our Certificate Courses</h2>
+      <p class="section-desc">Live online classes with projects, exercises, and feedback.</p>
+    </header>
+
+    <div class="cards" data-tilt-group>
+      <article class="card reveal">
+        <h3><i class="fa-solid fa-graduation-cap"></i> IT Course - 01</h3>
+        <ul>
+          <li>Internet & Email</li>
+          <li>MS Office Word</li>
+          <li>MS Office Excel</li>
+          <li>MS Office PowerPoint</li>
+        </ul>
+        <p><strong>Duration:</strong> 06 Weeks</p>
+        <p><strong>Class:</strong> Weekends</p>
+        <p><strong>Class Mode:</strong> Online</p>
+        <div class="price-bar">
+          <span class="old">Rs. 5,000</span>
+          <span class="new">Rs. 4,000</span>
         </div>
+      </article>
 
-        <!-- Card 2 -->
-        <div class="card">
-          <h3><i class="fas fa-laptop"></i> IT Course - 02</h3>
-          <ul>
-            <li>Computer Basics & Fundamentals</li>
-            <li>Internet & Email</li>
-            <li>MS Office Word</li>
-            <li>MS Office Excel</li>
-            <li>MS Office PowerPoint</li>
-            <li>AI Tools & Chatbots</li>
-          </ul>
-          <p><strong>Duration:</strong> 08 Weeks</p>
-          <p><strong>Class:</strong> Weekends</p>
-          <p><strong>Class Mode:</strong> Online</p>
-          <!-- <p><strong>🎁 Bonus:</strong> Certificate</p> -->
-          <div class="pricing">
-            <p class="old-price">
-              <span class="strikethrough">Rs. 6,500</span>
-            </p>
-            <p class="new-price">
-              <span class="highlight">Rs. 5,000</span>
-            </p>
-          </div>
+      <article class="card reveal">
+        <h3><i class="fa-solid fa-graduation-cap"></i> IT Course - 02</h3>
+        <ul>
+          <li>Computer Basics & Fundamentals</li>
+          <li>Internet & Email</li>
+          <li>MS Office Word</li>
+          <li>MS Office Excel</li>
+          <li>MS Office PowerPoint</li>
+          <li>AI Tools & Chatbots</li>
+        </ul>
+        <p><strong>Duration:</strong> 08 Weeks</p>
+        <p><strong>Class:</strong> Weekends</p>
+        <p><strong>Class Mode:</strong> Online</p>
+        <div class="price-bar">
+          <span class="old">Rs. 6,500</span>
+          <span class="new">Rs. 5,000</span>
         </div>
+      </article>
 
-        <!-- Card 3 -->
-        <div class="card">
-          <h3><i class="fas fa-laptop"></i>Canva Full Course</h3>
-          <ul>
-            <li>Full Tutorials of Canva (A-Z)</li>
-            <!-- <li>No - Canva Pro</li> -->
-          </ul>
-          <p><strong>Duration:</strong> 04 Weeks</p>
-          <p><strong>Class:</strong> Weekdays</p>
-          <p><strong>Class Mode:</strong> Online</p>
-          <!-- <p><strong>🎁 Bonus:</strong> Certificate</p> -->
-          <div class="pricing">
-            <p class="old-price">
-              <span class="strikethrough">Rs. 3,000</span>
-            </p>
-            <p class="new-price">
-              <span class="highlight">Rs. 2,000</span>
-            </p>
-          </div>
+      <article class="card reveal">
+        <h3><i class="fa-solid fa-graduation-cap"></i> Canva Full Course</h3>
+        <ul>
+          <li>Full Tutorials of Canva (A-Z)</li>
+        </ul>
+        <p><strong>Duration:</strong> 04 Weeks</p>
+        <p><strong>Class:</strong> Weekdays</p>
+        <p><strong>Class Mode:</strong> Online</p>
+        <div class="price-bar">
+          <span class="old">Rs. 3,000</span>
+          <span class="new">Rs. 2,000</span>
         </div>
-      </div>
-    </section>
+      </article>
+    </div>
+    <div class="divider skew"></div>
+  </section>
 
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <h2>📞 Contact Us</h2>
-      <p>Interested in joining? Ask your teacher or contact me:</p>
-      <br />
-      <ul>
-        <li><strong>Email:</strong> officeproedu@gmail.com</li>
-        <li><strong>Phone:</strong> +94 78 942 6679</li>
-        <li><strong>Whatsapp:</strong> +94 78 942 6679</li>
-        <!-- <li><strong>School:</strong> Greenfield High School</li> -->
-        <li><strong>Available:</strong> 24/7, 8:00AM – 5:00PM</li>
-      </ul>
-      <p><em>Students: Bring this website link or QR code to class!</em></p>
-    </section>
+  <!-- Contact -->
+  <section id="contact" class="section container alt">
+    <header class="section-head">
+      <h2 class="section-title">📞 Contact Us</h2>
+      <p class="section-desc">Interested in joining? Ask your teacher or contact us directly.</p>
+    </header>
 
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2025 officePro. All rights reserved.</p>
-    </footer>
+    <ul class="contact-list reveal">
+      <li><strong>Email:</strong> officeproedu@gmail.com</li>
+      <li><strong>Phone:</strong> +94 78 942 6679</li>
+      <li><strong>Whatsapp:</strong> +94 78 942 6679</li>
+      <li><strong>Available:</strong> 24/7, 8:00AM – 5:00PM</li>
+    </ul>
 
-    <!-- WhatsApp Floating Icon -->
-    <a
-      href="https://wa.me/94789426679"
-      class="whatsapp-float"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <i class="fab fa-whatsapp"></i>
-    </a>
+    <p class="hint reveal"><em>Students: Bring this website link or QR code to class!</em></p>
+    <div class="divider wave"></div>
+  </section>
 
-    <script src="script.js"></script>
-  </body>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 officePro. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Icon -->
+  <a href="https://wa.me/94789426679" class="whatsapp-float" target="_blank" rel="noopener">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
 </html>
