@@ -114,7 +114,8 @@ body {
 
 /* ------- Hero ------- */
 .hero{
-  
+  display:grid; grid-template-columns: 1.15fr .85fr; gap: clamp(2rem, 4vw, 5rem);
+  align-items:center; padding: clamp(3rem, 6vw, 7rem) 0 2rem
 }
 .hero-title{
   font-weight: 800; line-height: 1.05; font-size: clamp(2.2rem, 4.8vw, 4rem); color:#fff;
